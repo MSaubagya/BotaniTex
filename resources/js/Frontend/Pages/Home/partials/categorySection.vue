@@ -1,101 +1,161 @@
 <template>
-    <section class="container my-5">
-        <div class="row">
-            <!-- Browse by Make -->
-            <div class="col-md-6 mb-4">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h2>Browse by Make</h2>
-                    <Link :href="route('make')">Show All →</Link>
-                </div>
-
-                <div class="row text-center">
-                    <div
-                        v-for="make in bikeManufactures"
-                        :key="make.id"
-                        class="col-6 col-md-3 mb-3"
-                    >
-                        <Link
-                            :href="route('brows.product', { manufacture: make.id })"
-                            class="text-decoration-none text-dark"
-                        >
-                            <img
-                                v-if="make.media && make.media.length"
-                                :src="make.media[0].original_url"
-                                :alt="make.name"
-                                class="category-image"
-                            />
-                            <p>{{ make.name }}</p>
-                        </Link>
-                    </div>
+    <section class="showcase">
+        <!-- Horizontal brand strip -->
+        <div class="brand-strip">
+            <div class="brand-track">
+                <div v-for="brand in brands" :key="brand.name" class="brand-card">
+                    <img :src="brand.image" :alt="brand.name" />
                 </div>
             </div>
+        </div>
 
-            <!-- Browse by Model -->
-            <div class="col-md-6 mb-4">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h2>Browse by Model</h2>
-                    <Link :href="route('model')">Show All →</Link>
-                </div>
+        <!-- Featured cards -->
+        <div class="featured">
+            <h2>Explore our patterns</h2>
 
-                <div class="row text-center">
-                    <div
-                        v-for="model in bikeModel"
-                        :key="model.id"
-                        class="col-6 col-md-3 mb-3"
-                    >
-                        <Link
-                            :href="route('brows.product', { model: model.id })"
-                            class="text-decoration-none text-dark"
-                        >
-                            <img
-                                v-if="model.media && model.media.length"
-                                :src="model.media[0].original_url"
-                                :alt="model.name"
-                                class="category-image"
-                            />
-                            <p>{{ model.name }}</p>
-                        </Link>
-                    </div>
-                </div>
+            <div class="card-row">
+                <article
+                    v-for="(item, index) in patterns"
+                    :key="item.title"
+                    class="pattern-card"
+                >
+                    <img :src="item.image" :alt="item.title" />
+                    <span class="card-number">
+                        {{ String(index + 1).padStart(2, "0") }}
+                    </span>
+                    <p>{{ item.title }}</p>
+                </article>
             </div>
         </div>
     </section>
 </template>
 
 <script>
-import { Link } from "@inertiajs/inertia-vue3";
-
 export default {
-    components: {
-        Link,
-    },
-
-    props: {
-        bikeManufactures: {
-            type: Array,
-            default: () => [],
-        },
-        bikeModel: {
-            type: Array,
-            default: () => [],
-        },
+    data() {
+        return {
+            brands: [
+                { name: "Brand One", image: "/images/Bikes/Banner-images/brand-1.jpg" },
+                { name: "Brand Two", image: "/images/Bikes/Banner-images/brand-2.jpg" },
+                { name: "Brand Three", image: "/images/Bikes/Banner-images/brand-3.jpg" },
+                { name: "Brand Four", image: "/images/Bikes/Banner-images/brand-4.jpg" },
+                { name: "Brand Five", image: "/images/Bikes/Banner-images/brand-5.jpg" },
+                { name: "Brand Six", image: "/images/Bikes/Banner-images/brand-6.jpg" },
+            ],
+            patterns: [
+                { title: "Floral pattern", image: "/images/Bikes/Banner-images/brand-7.jpg" },
+                { title: "Desert pattern", image: "/images/Bikes/Banner-images/brand-8.jpg" },
+                { title: "Graphic pattern", image: "/images/Bikes/Banner-images/brand-9.jpg" },
+                { title: "Minimal pattern", image: "/images/Bikes/Banner-images/brand-10.jpg" },
+                { title: "Nature pattern", image: "/images/Bikes/Banner-images/brand-11.jpg" },
+            ],
+        };
     },
 };
 </script>
 
 <style scoped>
-.category-image {
+.showcase {
+    overflow: hidden;
+    color: #202124;
+    background:
+        radial-gradient(ellipse at 20% 45%, #c1d7d1 0, transparent 42%),
+        radial-gradient(ellipse at 80% 65%, #d9c9df 0, transparent 42%),
+        #e9e5df;
+}
+
+.brand-strip {
+    overflow-x: auto;
+    padding: 12px 20px;
+    border-bottom: 1px solid rgb(255 255 255 / 65%);
+}
+
+.brand-track {
+    display: flex;
+    width: max-content;
+    gap: 12px;
+}
+
+.brand-card {
+    display: grid;
+    width: 150px;
+    height: 120px;
+    place-items: center;
+    overflow: hidden;
+    border: 1px solid rgb(255 255 255 / 80%);
+    border-radius: 14px;
+    background: rgb(255 255 255 / 72%);
+}
+
+.brand-card img {
     width: 100%;
-    height: 100px;
+    height: 100%;
     object-fit: contain;
 }
 
-h2 {
-    font-size: 1.4rem;
+.featured {
+    padding: 36px clamp(20px, 4vw, 56px) 52px;
 }
 
-p {
-    margin-top: 8px;
+.featured h2 {
+    margin: 0 0 20px;
+    font-size: clamp(1.35rem, 2vw, 1.8rem);
+}
+
+.card-row {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px, 1fr));
+    gap: 18px;
+}
+
+.pattern-card {
+    position: relative;
+    min-width: 0;
+    padding: 8px;
+    overflow: hidden;
+    border: 1px solid rgb(255 255 255 / 90%);
+    border-radius: 22px;
+    background: rgb(255 255 255 / 62%);
+    box-shadow: 0 10px 28px rgb(40 40 40 / 14%);
+}
+
+.pattern-card img {
+    display: block;
+    width: 100%;
+    height: 170px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.pattern-card p {
+    margin: 10px 4px 4px;
     font-weight: 600;
+}
+
+.card-number {
+    position: absolute;
+    top: 95px;
+    left: 12px;
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 2px 8px rgb(0 0 0 / 30%);
+}
+
+@media (max-width: 900px) {
+    .card-row {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .card-row {
+        grid-template-columns: 1fr;
+    }
+
+    .pattern-card img {
+        height: 210px;
+    }
 }
 </style>

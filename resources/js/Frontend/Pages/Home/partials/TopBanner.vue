@@ -2,7 +2,7 @@
     <section class="hero">
         <video autoplay muted loop playsinline aria-hidden="true">
             <source
-                src="/images/Bikes/Banner-images/5198907-uhd_4096_2160_25fps.mp4"
+                src="/images/Bikes/Banner-images/b4.mp4"
                 type="video/mp4"
             />
         </video>
