@@ -1,12 +1,14 @@
 <template>
-  <Topnavigationbar style="top: 0;" />
+  <div>
+    <Topnavigationbar style="top: 0;" />
 
-  <slot />
+    <slot />
 
-  <button class="btn-scroll-top">
-  <i class="fa-solid fa-chevron-up"></i>
-</button>
-  <Footer />
+    <button class="btn-scroll-top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+    <Footer />
+  </div>
 </template>
 <script setup>
 import { useRecaptchaProvider } from "vue-recaptcha";

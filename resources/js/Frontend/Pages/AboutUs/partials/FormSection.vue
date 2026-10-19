@@ -7,18 +7,19 @@
             <h1 class="fw-medium mb-4">About Us</h1>
 
             <p class="fs-6">
-                <span class="fw-bold">ABC SPARE PARTS (PVT) LTD.</span>
-                is a newly established company founded in 2025 by a team of
-                experienced professionals in the motorcycle spare parts industry.
-                Our company is focused on providing reliable and affordable spare
-                parts to customers locally and internationally.
+                <span class="fw-bold">BotaniTex</span>
+                is an AI-powered textile design platform that bridges the beauty of nature with the 
+                possibilities of artificial intelligence. The platform focuses on analyzing botanical 
+                features, including leaf structures, vein patterns, floral shapes, textures, and natural 
+                color variations, to generate distinctive, nature-inspired textile designs.
             </p>
 
             <p class="fs-6">
-                We work with trusted suppliers and manufacturers to provide
-                high-quality products. Our goal is to build strong relationships
-                with our customers by providing excellent products, competitive
-                prices, and reliable customer service.
+                By combining artificial intelligence with botanical image processing, 
+                BotaniTex aims to transform natural elements into visually appealing, detailed, 
+                and print-ready patterns optimized for cotton fabrics. Our goal is to support 
+                creative textile design through intelligent automation, offering new possibilities for 
+                designers and textile-related industries while celebrating the complexity and diversity of nature.
             </p>
         </div>
 
@@ -37,19 +38,22 @@
                         <div class="col-3"></div>
 
                         <p>
-                            Our mission is to provide high-quality motorcycle spare
-                            parts at affordable prices while delivering excellent
-                            customer service. We are committed to maintaining
-                            product quality, reliability, and customer satisfaction.
+                            Our mission is to develop an intelligent and accessible textile
+                             pattern generation platform that uses AI and botanical image analysis 
+                             to capture the intricate details of leaves, flowers, and other natural 
+                             elements. We aim to transform these features into high-quality, visually 
+                             consistent textile patterns tailored to cotton fabric printing, while 
+                             exploring opportunities to improve design efficiency, preserve the uniqueness 
+                             of natural forms, and encourage innovation within the textile design process.
                         </p>
 
                     </div>
                 </div>
 
-                <div class="col-md-6 vision-img">
+                <div class="col-md-6 mission-img">
                     <img
-                        src="https://via.placeholder.com/740x500"
-                        alt="Dummy Mission Image"
+                        src="/images/mission.jpeg"
+                        alt="Mission Image"
                         class="w-100 h-100 object-fit-cover"
                     />
                 </div>
@@ -67,8 +71,8 @@
 
                 <div class="col-md-6 vision-img">
                     <img
-                        src="https://via.placeholder.com/740x500"
-                        alt="Dummy Vision Image"
+                        src="/images/vision.jpeg"
+                        alt="Vision Image"
                         class="w-100 h-100 object-fit-cover"
                     />
                 </div>
@@ -84,11 +88,13 @@
                         <div class="col-3"></div>
 
                         <p>
-                            Our vision is to become a trusted spare parts
-                            supplier by providing quality products, competitive
-                            prices, and dependable services. We aim to continuously
-                            improve our products and services to meet the changing
-                            needs of our customers.
+                            To become an innovative platform for AI-driven textile design, 
+                            inspiring a new generation of nature-inspired patterns through 
+                            the integration of artificial intelligence, botanical analysis, 
+                            and textile technology. We envision a future where natural beauty 
+                            and intelligent design work together to create distinctive textile 
+                            patterns that encourage creativity, enhance design possibilities, 
+                            and support more thoughtful approaches to textile production.
                         </p>
 
                     </div>

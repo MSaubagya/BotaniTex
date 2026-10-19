@@ -2,11 +2,19 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="layout-navbar-fixed layout-menu-fixed">
 @php
 $settings = [
+<<<<<<< Updated upstream
     'app_name' => App\Models\Settings::where('key', 'app_name')->first()?->value ?? 'BotaniTex',
     'app_description' => App\Models\Settings::where('key', 'app_description')->first()?->value ?? 'AI-powered botanical textile pattern generation',
     'app_keywords' => '',
     'app_author' => '',
     'app_favicon' => App\Models\Settings::where('key', 'app_favicon')->first()?->value ?? '',
+=======
+    'app_name' => \App\Models\Settings::where('key', 'app_name')->value('value') ?? 'BotaniTex',
+    'app_description' => \App\Models\Settings::where('key', 'app_description')->value('value') ?? 'AI-Powered Botanical Textile Pattern Generator',
+    'app_keywords' => '',
+    'app_author' => '',
+    'app_favicon' => \App\Models\Settings::where('key', 'app_favicon')->value('value') ?? '',
+>>>>>>> Stashed changes
     'app_logo' => '',
 ];
 @endphp
