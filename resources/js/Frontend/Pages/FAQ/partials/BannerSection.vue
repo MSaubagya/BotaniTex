@@ -2,13 +2,6 @@
 <template>
     <section>
         <div class="hero">
-            <h1 class="text-light fs-1 fw-semibold text-uppercase">
-                faq
-            </h1>
-
-            <h2 class="text-light fs-4 fw-semibold text-uppercase">
-                demo website
-            </h2>
         </div>
     </section>
 </template>
@@ -21,7 +14,7 @@ export default {
 
 <style scoped>
 .hero {
-    background: url("https://via.placeholder.com/1200x600")
+    background: url("images/faq.jpeg")
         no-repeat center center;
     justify-content: center;
     background-size: cover;

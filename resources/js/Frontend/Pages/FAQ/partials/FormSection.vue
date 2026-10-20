@@ -18,7 +18,7 @@
                         aria-expanded="true"
                         aria-controls="collapseOne"
                     >
-                        What is Demo Company?
+                        What is BotaniTex?
                     </button>
                 </h2>
 
@@ -30,9 +30,9 @@
                     <hr class="my-0 mx-3" />
 
                     <div class="accordion-body mt-3 fs-6">
-                        Demo Company is a sample business created for testing
-                        and demonstration purposes. We provide various sample
-                        products and services to our customers.
+                        BotaniTex is an AI-powered textile design platform that 
+                        transforms botanical elements, such as leaves and flowers, 
+                        into unique, nature-inspired textile patterns..
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@
                         aria-expanded="false"
                         aria-controls="collapseTwo"
                     >
-                        How can I place an order?
+                        How does BotaniTex work?
                     </button>
                 </h2>
 
@@ -61,9 +61,9 @@
                     <hr class="my-0 mx-3" />
 
                     <div class="accordion-body mt-3 fs-6">
-                        You can place an order by selecting a product from our
-                        website and completing the order form with your required
-                        information.
+                        BotaniTex uses botanical image processing and AI-based techniques 
+                        to analyze natural features, including leaf veins, shapes, textures, 
+                        and colours, to help generate creative textile patterns.
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                         aria-expanded="false"
                         aria-controls="collapseThree"
                     >
-                        How long does delivery take?
+                        What types of images can I upload?
                     </button>
                 </h2>
 
@@ -92,8 +92,9 @@
                     <hr class="my-0 mx-3" />
 
                     <div class="accordion-body mt-3 fs-6">
-                        Standard delivery usually takes between 2 and 5
-                        business days depending on the delivery location.
+                        You can use botanical images such as leaves and flowers. 
+                        For better results, choose clear, well-lit images with 
+                        visible natural details and minimal background distractions.
                     </div>
                 </div>
             </div>
@@ -110,7 +111,7 @@
                         aria-expanded="false"
                         aria-controls="collapseFour"
                     >
-                        What payment methods are available?
+                        Can I create textile patterns from my own images?
                     </button>
                 </h2>
 
@@ -122,8 +123,8 @@
                     <hr class="my-0 mx-3" />
 
                     <div class="accordion-body mt-3 fs-6">
-                        Demo Company accepts several payment methods including
-                        cash payments, bank transfers, and online payments.
+                        BotaniTex is designed to help users transform their own 
+                        botanical reference images into nature-inspired textile pattern concepts.
                     </div>
                 </div>
             </div>
@@ -140,7 +141,7 @@
                         aria-expanded="false"
                         aria-controls="collapseFive"
                     >
-                        Can I return a product?
+                        Do I need design experience to use BotaniTex?
                     </button>
                 </h2>
 
@@ -152,9 +153,9 @@
                     <hr class="my-0 mx-3" />
 
                     <div class="accordion-body mt-3 fs-6">
-                        Yes. Products can be returned according to our sample
-                        return policy. Please contact our support team for
-                        further assistance.
+                        No advanced textile design experience is intended to be necessary. 
+                        BotaniTex aims to make AI-assisted botanical textile design more 
+                        accessible to students, designers, and creative professionals.
                     </div>
                 </div>
             </div>
@@ -171,7 +172,7 @@
                         aria-expanded="false"
                         aria-controls="collapseSix"
                     >
-                        How can I contact customer support?
+                        Who can benefit from BotaniTex?
                     </button>
                 </h2>
 
@@ -183,9 +184,9 @@
                     <hr class="my-0 mx-3" />
 
                     <div class="accordion-body mt-3 fs-6">
-                        You can contact our customer support team through the
-                        contact form, email, or telephone during our normal
-                        business hours.
+                        BotaniTex is designed for textile designers, design students, 
+                        creative professionals, researchers, and anyone interested 
+                        in exploring AI-generated, nature-inspired textile patterns.
                     </div>
                 </div>
             </div>
