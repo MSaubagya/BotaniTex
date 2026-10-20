@@ -23,6 +23,65 @@
             </p>
         </div>
 
+        
+    <section class="focus-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="focus-heading">Our Key Focus Areas</h2>
+                <p class="focus-subtitle">
+                    Combining nature, artificial intelligence, and textile innovation.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="focus-card">
+                        <div class="focus-icon">✦</div>
+                        <h4>AI-Powered Design</h4>
+                        <p>
+                            Generate distinctive botanical textile patterns
+                            using artificial intelligence.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="focus-card">
+                        <div class="focus-icon">❧</div>
+                        <h4>Botanical Analysis</h4>
+                        <p>
+                            Analyze leaf veins, floral shapes, textures,
+                            and natural colour variations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="focus-card">
+                        <div class="focus-icon">✿</div>
+                        <h4>Pattern Innovation</h4>
+                        <p>
+                            Transform natural details into creative,
+                            repeatable textile patterns.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="focus-card">
+                        <div class="focus-icon">▧</div>
+                        <h4>Cotton Print Optimization</h4>
+                        <p>
+                            Focus on pattern clarity and suitability
+                            for cotton fabric printing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
         <!-- Mission -->
         <div class="container mb-5 mt-5">
@@ -149,6 +208,60 @@ export default {};
 .vision-img {
     width: 333px;
 }
+
+
+.focus-section {
+    background-color: #E8DFCC;
+}
+
+.focus-heading {
+    color: #243A2B;
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 700;
+}
+
+.focus-subtitle {
+    color: #5F6259;
+    max-width: 600px;
+    margin: 12px auto 0;
+}
+
+.focus-card {
+    height: 100%;
+    padding: 28px 22px;
+    background: #FFFFFF;
+    border-radius: 14px;
+    text-align: center;
+    border-bottom: 3px solid #B08A4A;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.focus-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(36, 58, 43, 0.12);
+}
+
+.focus-icon {
+    font-size: 38px;
+    color: #B08A4A;
+    margin-bottom: 15px;
+}
+
+.focus-card h4 {
+    color: #243A2B;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.focus-card p {
+    color: #62665E;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
 
 </style>
 ```
