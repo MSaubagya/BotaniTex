@@ -2,13 +2,11 @@
 <template>
     <section>
         <div class="hero">
-            <h1 class="text-light fs-1 fw-semibold text-uppercase">
-                dummy about us
+            <h1 class="fw-bold text-uppercase"
+            style="font-size: 70px; color: #E9B44C; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+                BotaniTex
             </h1>
 
-            <h2 class="text-light fs-4 fw-semibold text-uppercase">
-                dummy company
-            </h2>
         </div>
     </section>
 </template>
@@ -21,7 +19,7 @@ export default {
 
 <style scoped>
 .hero {
-    background: url("https://via.placeholder.com/1600x600")
+    background: url("/images/about.jpeg")
         no-repeat center center;
     background-size: cover;
     justify-content: center;

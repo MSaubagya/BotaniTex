@@ -3,8 +3,7 @@
         <div class="footer-content">
             <div class="company">
                 <p>
-                    Demo Company is a sample business website created for
-                    demonstration and testing purposes.
+                    BotaniTex harnesses AI to transform botanical elements into sophisticated, print-ready textile patterns.
                 </p>
             </div>
 
@@ -33,7 +32,7 @@
         </div>
 
         <div class="copyright">
-            © {{ new Date().getFullYear() }} Demo Company. All rights reserved.
+            © {{ new Date().getFullYear() }} BotaniTex. All rights reserved.
         </div>
     </footer>
 </template>
