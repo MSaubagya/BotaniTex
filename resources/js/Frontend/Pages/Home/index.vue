@@ -4,6 +4,8 @@
         <CaregorySection />
         <secondBanner />
         <thirdBanner />
+        <RecolorItLikeMagic />
+        <Explore />
     </AppLayout>
 </template>
 
@@ -14,6 +16,8 @@ import TopBanner from "./partials/TopBanner.vue";
 import CaregorySection from "./partials/categorySection.vue";
 import secondBanner from "./partials/secondBanner.vue";
 import thirdBanner from "./partials/thirdBanner.vue";
+import Explore from "./partials/Explore.vue";
+import RecolorItLikeMagic from "./partials/RecolorItLikeMagic.vue";
 
 export default {
     name: "HomePage",
@@ -24,6 +28,8 @@ export default {
 
         secondBanner,
         thirdBanner,
+        RecolorItLikeMagic,
+        Explore,
     },
     props: {
         vehicle_types: Object,
