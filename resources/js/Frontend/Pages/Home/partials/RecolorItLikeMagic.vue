@@ -11,14 +11,16 @@
                 </header>
 
                 <div class="editor-row">
-                    <div class="upload-column">
-                        <label class="field-label" for="image-upload">Upload image</label>
+                     <div class="upload-column">
+                        <label class="field-label" for="image-upload">
+                            Upload image
+                        </label>
 
                         <label class="image-upload" for="image-upload">
-                            <img v-if="imageUrl" :src="imageUrl" alt="Image to recolor" />
-                            <span v-else class="upload-placeholder">
-                                Choose an image
-                            </span>
+                            <img
+                                :src="imageUrl || sampleImageUrl1"
+                                :alt="imageUrl ? 'Uploaded image' : 'Sample image'"
+                            />
                             <span class="upload-action" aria-hidden="true">↻</span>
                         </label>
 
@@ -40,7 +42,7 @@
                             v-model="objectName"
                             class="object-input"
                             placeholder="e.g. Shirt"
-                        />
+                        ></textarea>
 
                         <label class="field-label color-label" for="color-hex">
                             Choose a new color
@@ -67,11 +69,13 @@
                             class="generate-button"
                             type="button"
                             :disabled="!imageUrl || !objectName.trim()"
-                            @click="$emit('generate', {
-                                image: selectedFile,
-                                objectName,
-                                color
-                            })"
+                            @click="
+                                $emit('generate', {
+                                    image: selectedFile,
+                                    objectName,
+                                    color,
+                                })
+                            "
                         >
                             Generate
                         </button>
@@ -82,13 +86,13 @@
                     <div class="preview-column">
                         <div class="preview-frame">
                             <img
-                                v-if="previewUrl"
-                                :src="previewUrl"
-                                alt="Recolored preview"
+                                :src="previewUrl || sampleImageUrl2"
+                                :alt="
+                                    previewUrl
+                                        ? 'Recolored preview'
+                                        : 'Sample image preview'
+                                "
                             />
-                            <div v-else class="preview-placeholder">
-                                Your result will appear here
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -108,6 +112,8 @@ export default {
             selectedFile: null,
             imageUrl: "",
             previewUrl: "",
+            sampleImageUrl1: "/images/Bikes/Recolor/one.png",
+            sampleImageUrl2: "/images/Bikes/Recolor/two.png",
             objectName: "Shirt",
             color: "#2F5DFF",
             hexColor: "2F5DFF",
@@ -117,6 +123,7 @@ export default {
     watch: {
         hexColor(value) {
             const normalized = value.replace("#", "");
+
             if (/^[0-9a-fA-F]{6}$/.test(normalized)) {
                 this.color = `#${normalized}`;
             }
@@ -128,7 +135,9 @@ export default {
             const file = event.target.files?.[0];
             if (!file) return;
 
-            if (this.imageUrl) URL.revokeObjectURL(this.imageUrl);
+            if (this.imageUrl) {
+                URL.revokeObjectURL(this.imageUrl);
+            }
 
             this.selectedFile = file;
             this.imageUrl = URL.createObjectURL(file);
@@ -141,7 +150,9 @@ export default {
     },
 
     beforeUnmount() {
-        if (this.imageUrl) URL.revokeObjectURL(this.imageUrl);
+        if (this.imageUrl) {
+            URL.revokeObjectURL(this.imageUrl);
+        }
     },
 };
 </script>
@@ -153,10 +164,21 @@ export default {
     place-items: center;
     padding: 56px 32px;
     color: #202326;
-    background:
-        radial-gradient(ellipse at 18% 18%, rgba(167, 202, 173, 0.7), transparent 33%),
-        radial-gradient(ellipse at 78% 15%, rgba(219, 187, 191, 0.62), transparent 35%),
-        radial-gradient(ellipse at 43% 76%, rgba(224, 208, 169, 0.7), transparent 38%),
+    background: radial-gradient(
+            ellipse at 18% 18%,
+            rgba(167, 202, 173, 0.7),
+            transparent 33%
+        ),
+        radial-gradient(
+            ellipse at 78% 15%,
+            rgba(219, 187, 191, 0.62),
+            transparent 35%
+        ),
+        radial-gradient(
+            ellipse at 43% 76%,
+            rgba(224, 208, 169, 0.7),
+            transparent 38%
+        ),
         #d9ded9;
 }
 
@@ -350,13 +372,8 @@ export default {
     box-shadow: 0 18px 35px rgba(40, 49, 51, 0.18);
 }
 
-.preview-placeholder {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    place-items: center;
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 0.9rem;
+.preview-frame img {
+    display: block;
 }
 
 @media (max-width: 1000px) {

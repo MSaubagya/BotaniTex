@@ -48,42 +48,47 @@ export default {
     return {
       packs: [
         {
-          name: "Floral",
-          image: "/images/packs/floral.jpg",
+          name: "Saree",
+          image: "/images/Bikes/PatternPacks/saree.jpeg",
           href: "#floral",
         },
         {
-          name: "Product",
-          image: "/images/packs/product.jpg",
+          name: "Shawls",
+          image: "/images/Bikes/PatternPacks/Shawls.jpeg",
           href: "#product",
         },
         {
-          name: "Abstract",
-          image: "/images/packs/abstract.jpg",
+          name: "Curtains",
+          image: "/images/Bikes/PatternPacks/Curtains.jpeg",
           href: "#abstract",
         },
         {
-          name: "Celebration",
-          image: "/images/packs/celebration.jpg",
+          name: "Blouses",
+          image: "/images/Bikes/PatternPacks/Blouses.jpeg",
+          href: "#celebration",
+        },
+        {
+          name: "Bedsheets",
+          image: "/images/Bikes/PatternPacks/Bedsheets.jpeg",
           href: "#celebration",
         },
       ],
       featuredPatterns: [
         {
           title: "Botanical print",
-          image: "/images/patterns/botanical.jpg",
+          image: "/images/Bikes/MakeMore/six.jpeg",
         },
         {
           title: "Abstract shapes",
-          image: "/images/patterns/abstract.jpg",
+          image: "/images/Bikes/MakeMore/one.jpeg",
         },
         {
           title: "Colorful checks",
-          image: "/images/patterns/checks.jpg",
+          image: "/images/Bikes/MakeMore/three.jpeg",
         },
         {
           title: "Nature inspired",
-          image: "/images/patterns/nature.jpg",
+          image: "/images/Bikes/MakeMore/two.jpeg",
         },
       ],
     };

@@ -88,17 +88,17 @@ const chips = [
     {
         label: "Leave pattern",
         img: "",
-        text: "Show me fuel system parts for my bike",
+        text: "Leave pattern",
     },
     {
         label: "Rose follower pattern ",
         img: "",
-        text: "I need an air or oil filter for my bike",
+        text: "I need an Rose follower pattern",
     },
     {
         label: "mix",
         img: "",
-        text: "Which engine oil and fluids suit my bike?",
+        text: "mix",
     },
 ];
 
