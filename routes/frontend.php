@@ -66,6 +66,9 @@ use Inertia\Inertia;
   Route::get('/contact-us', function(){
     return Inertia::render('ContactUs/index');
   })->name('contact-us');
+  Route::get('/sign-in', function(){
+    return Inertia::render('SignIn/index');
+  })->name('sign-in');
   //
   //Routing AboutUs Page
   Route::get('/about-us', function(){

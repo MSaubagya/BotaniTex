@@ -33,6 +33,9 @@
                 <Link :href="route('contact-us')" @click="menuOpen = false">
                     Contact Us
                 </Link>
+                <Link :href="route('sign-in')" @click="menuOpen = false">
+                    Sign In
+                </Link>
             </div>
         </nav>
     </header>
